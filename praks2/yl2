@@ -1,0 +1,10 @@
+#!/bin/bash
+#
+#Erki_Komentaarid
+#
+echo -n "Erki Luik, " # väljastab teksti ilma reavahetuseta
+echo -n "ISP118, " # väljastab teksti ilma reavahetuseta
+echo -n "Antud aine huvitab mind väga, " # väljastab teksti ilma reavahetuseta
+echo -n "praegune mulje on väga hea, kuna saab midagi uut teada mida saan tulevikus hakkata kasutama. " # väljastab teksti ilma reavahetusta
+#
+# Lõpp
