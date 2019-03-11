@@ -1,0 +1,8 @@
+#!/bin/bash
+#
+#sisselogimise käsk pealkiri
+#
+echo -n "skriptimine at" tekst ilma reavaheta
+uptime käsk
+#
+#Lõpp lõppetus
