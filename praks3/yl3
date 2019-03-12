@@ -2,7 +2,7 @@
 #
 #sisselogimise #käsk pealkiri
 #
-echo -n "skriptimine at" #tekst ilma reavaheta
-uptime #käsk
+echo -n $HOSTNAME "at" #tekst ilma reavaheta
+uptime | cut -f1 -d"," #käsk
 #
 #Lõpp lõppetus
