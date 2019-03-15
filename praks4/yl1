@@ -1,0 +1,9 @@
+#!/bin/bash
+#
+#Tervitus
+#
+echo -n "Sisesta oma ees- ja perenimi:" #ilma reavaheta annab küsimuse
+read eesnimi perenimi #loeb vastuseid ning jätab meelde
+echo "Tere tulemast, $eesnimi $perenimi" #täidab 2 lünka eelmise käsuga 
+#
+#lõpp
