@@ -12,8 +12,8 @@ echo "Sisestage küpsiste arv pakis"
 read pakis
 aluskandik=`expr $pikkus \* $laius`
 kypsiseid=`expr $kypsise_pikkus \* $kypsise_laius`
-pakke=`expr $kihtidearv \* $kihis`
-pakkekokku=`expr $pakke \* $pakis`
+pakke=`expr $kihtidearv \* $pakis`
+pakkekokku=`expr $pakke \/ $pakis`
 echo "tuleb osta $pakkekokku pakki küpsiseid"
 #
 #Lõpp
