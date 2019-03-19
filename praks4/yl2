@@ -2,18 +2,18 @@
 #
 #Pagari abi
 #
-echo "Sisestage kandiku pikkus ja laius (cm):"
-read pikkus ja laius
-echo "Sisestage kypsise pikkus ja laius (cm):"
-read kypsise_pikkus ja kypsise_laius
-echo "Sisestage kihtide arv"
-read kihtidearv
-echo "Sisestage küpsiste arv pakis"
-read pakis
-aluskandik=`expr $pikkus \* $laius`
-kypsiseid=`expr $kypsise_pikkus \* $kypsise_laius`
-pakke=`expr $kihtidearv \* $pakis`
-pakkekokku=`expr $pakke \/ $pakis`
-echo "tuleb osta $pakkekokku pakki küpsiseid"
+echo "Sisestage kandiku pikkus ja laius (cm):" #küsib pikkusi
+read pikkus ja laius #loeb vastust
+echo "Sisestage kypsise pikkus ja laius (cm):" #küsib pikkusi
+read kypsise_pikkus ja kypsise_laius #loeb vastust
+echo "Sisestage kihtide arv" #küsi kihtide arvu
+read kihtidearv #loeb vastust
+echo "Sisestage küpsiste arv pakis" #küsib küpsiste arvu
+read pakis #loeb vastust
+aluskandik=`expr $pikkus \* $laius` #arvutab
+kypsiseid=`expr $kypsise_pikkus \* $kypsise_laius` #arvutab
+pakke=`expr $kihtidearv \* $pakis` #arvutab
+pakkekokku=`expr $pakke \/ $pakis` #arvutab
+echo "tuleb osta $pakkekokku pakki küpsiseid" #vastus
 #
 #Lõpp
