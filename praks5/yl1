@@ -1,0 +1,11 @@
+!/bin/bash
+#
+#kolmnurga arvutaja
+#
+echo -n "Sisesta täisnurkse kolmnurga a ja b külje pikkus (cm):"
+read a ja b
+echo -n "Hüpotenuusi väärtus on: "
+echo "scale=2;sqrt($a^2+$b^2)" |bc
+#
+#lõpp
+
