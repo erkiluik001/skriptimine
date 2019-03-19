@@ -2,15 +2,15 @@
 #
 #Inimeste loendur
 #
-echo -n "Inimeste arv: "
-read inimest
-echo -n "Mitu kohta on bussis:"
-read kohta
-echo -n "Mitu bussi on :"
-read bussi
-koht=`expr $bussi \* $kohta`
-echo=Bussis on $kohta tühja kohta
-puudu=`expr $inimest - $koht`
-echo "Maha jäi $puudu inimest"
+echo -n "Inimeste arv: " #küsib inimeste arvu
+read inimest #loeb vastust
+echo -n "Mitu kohta on bussis:" #küsib kohti bussis
+read kohta #loeb vastust
+echo -n "Mitu bussi on :" #küsib mittu bussi on
+read bussi #loeb vastust
+koht=`expr $bussi \* $kohta` #tehted
+echo=Bussis on $kohta tühja kohta #tehted
+puudu=`expr $inimest - $koht` #tehted
+echo "Maha jäi $puudu inimest" #vastus
 #
 #lõpp
