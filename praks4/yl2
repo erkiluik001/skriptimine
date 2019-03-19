@@ -1,0 +1,19 @@
+#!/bin/bash
+#
+#Pagari abi
+#
+echo "Sisestage kandiku pikkus ja laius (cm):"
+read pikkus ja laius
+echo "Sisestage kypsise pikkus ja laius (cm):"
+read kypsise_pikkus ja kypsise_laius
+echo "Sisestage kihtide arv"
+read kihtidearv
+echo "Sisestage küpsiste arv pakis"
+read pakis
+aluskandik=`expr $pikkus \* $laius`
+kypsiseid=`expr $kypsise_pikkus \* $kypsise_laius`
+pakke=`expr $kihtidearv \* $kihis`
+pakkekokku=`expr $pakke \* $pakis`
+echo "tuleb osta $pakkekokku pakki küpsiseid"
+#
+#Lõpp
