@@ -1,0 +1,16 @@
+#!/bin/bash
+#
+#Inimeste loendur
+#
+echo -n "Inimeste arv: "
+read inimest
+echo -n "Mitu kohta on bussis:"
+read kohta
+echo -n "Mitu bussi on :"
+read bussi
+koht=`expr $bussi \* $kohta`
+echo=Bussis on $kohta tühja kohta
+puudu=`expr $inimest - $koht`
+echo "Maha jäi $puudu inimest"
+#
+#lõpp
