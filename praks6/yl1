@@ -1,0 +1,13 @@
+#!/bin/bash
+#
+#Täisarvu või paarituarvu tuvastaja
+echo "sisesta mingi number" #küsib arvu
+read arv #loeb arvu
+if (($arv % 2 == 0)) #valem
+then
+echo "see on paaris arv" #vastus kui paaris
+else
+echo "see on paaritu arv" #vastus kui paaritu
+fi
+#
+#lõpp
