@@ -1,0 +1,14 @@
+#!/bin/bash
+#
+#Reisi päeva kalkulaator
+echo "pühapäev(0),esmaspäev(1),teisipäev(2),kolmapäeval(3),neljapäev(4),reede(5),laupäev(6)" #kuupäeva varientide kuvamine
+echo "vali 0-6 millisel päeval lähed:" #küsitakse millisel päeval numbrina?
+read x
+echo "Mitu ööpäeva oled reisil:" #küsitakse kaua reisil oled?
+read y
+q=$(($x + $y)) #valem
+tagasi=$(($q %7)) #valem
+echo "Pühapäev(0),esmaspäev(1),teisipäev(2),kolmapäev(3),neljapäev(4),reede(5),laupäev(6)" #saab uuesti vaatada numbrite tähendusi
+echo "tagasi oled päeval number $tagasi" #millal tagasi
+#
+#lõpp
