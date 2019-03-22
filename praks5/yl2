@@ -1,0 +1,13 @@
+#!/bin/bash
+#
+#
+echo -n "Sisesta kolmnurga a külg:" #peab kirjutama ühe kolmnurga külje
+read a
+echo -n "Sisesta kolmnurga b külg:" #peab kirjutama teise kolmnurga külje
+read b
+echo -n "Sisesta kolmnurga c külg:" #peab kirjutama kolmanda kolmnurga külje
+read c
+q=`echo "scale=2;$a + $b + $c" |bc` #valem
+p=`echo "scale=2;$q / 2" |bc` #valem
+echo "scale=2;sqrt($p * ($p-$a) * ($p-$b) * ($p-$c))" |bc #valem
+
