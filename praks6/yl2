@@ -1,0 +1,16 @@
+#!/bin/bash
+#
+#Bussireis if-ga
+#
+echo -n "kui palju on reisijaid:" #küsib reisijate arvu
+read reisijaid #loeb nende arvu
+echo -n "mitu iste kohta on bussis:" #küsib istmete arvu
+read iste #loeb istemte arvu
+qr=`expr $reisijaid \/ $iste` #jagab reisijate arvu istmete arvuga
+qt=`expr $reisijaid % $iste` #jagab reisijate arvu istmete arvuga, ning on olemas ka jääk
+if test $qt -gt 0 # vaatab kas vastus qt on 0
+then #kui qt väärtus pole 0
+qr=`expr $qr + 1` #lisab ühe juurde
+fi #lõppetab if commandi
+echo "$qr bussi on vaja juurde tellida." #annab vastuse
+#lõpp
