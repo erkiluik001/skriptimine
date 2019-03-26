@@ -1,0 +1,11 @@
+#!/bin/bash
+#
+#paarsus
+if (( $1 % 2 == 0 )) #vaatab kas parameeter jagub 2
+then #kui jagub siis....
+echo "Arv on paaris" #väljastab teate et on paaris
+else #kui aga ei jagu siis....
+echo "Arv on paaritu" #väljastab teate et on paariut
+fi #lõppetab if käsu
+#
+#lõpp
