@@ -1,0 +1,21 @@
+#!/bin/bash
+#
+#Kuupäeva ütleja
+#
+echo "siseta kuu number" #küsib kuu numbrit
+read kuu #loeb kuunumbrit
+if [ "$kuu" -ge 1 ] & [ "$kuu" -le 2 ]; then #alustab if käsu, kui vastus jääb 1 ja 2 vahele siis annab käsu echo
+echo "Hetkel on Talv" #annab vastuseks,et on talv
+elif [ "$kuu" -ge 3 ] & [ "$kuu" -le 5 ]; then #kui vastus jääb 3 ja 5 vahele siis annab käsu echo
+echo "Hetkel on Kevad" #annab vastuseks, et on kevad
+elif [ "$kuu" -ge 6 ] & [ "$kuu" -le 8 ]; then #kui vastus jääb 6 ja 8 vahele siis annab käsu echo
+echo "Hetkel on Suvi" #annab vastuseks, et on suvi
+elif [ "$kuu" -ge 9 ] & [ "$kuu" -le 11 ]; then #kui vastus jääb 9 ja 11 vahele siis annab käsu echo
+echo "Hetkel on Sygis" #annab vastuseks, et on sygis
+elif [ "$kuu" -eq 12 ]; then #kui vastus on võrdne 12 siis annab käsu echo
+echo "Hetkel on Talv" #annab vastuseks,et on Talv
+else #kui on midagi muud peale 1-12 siis annab käsu echo
+echo "Antud kuu nubri pole olemas" #annab teate et sellisel numbril pole kuud
+fi #lõppetab if käsu
+#
+#lõpp
