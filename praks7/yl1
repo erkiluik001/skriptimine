@@ -1,0 +1,17 @@
+#!/bin/bash
+#
+#Vanuse kontrolli #pealkiri
+#
+echo "sisesta oma vanus" #küsib vanust
+read vanus #loeb vanust
+if [ "$vanus" -ge 0 ] && [ "$vanus" -le 11 ]; then #kontrollib et kui vanus jääb 0 ja 11 vahele
+echo "Sa oled laps" #kui vanus jääb 0 ja 11 vahele siis annab vastuseks, et sa oled laps
+elif [ "$vanus" -ge 12 ] && [ "$vanus" -le 18 ]; then #kui aga vanus jääb sellese kategooriasse siis väljastab teate
+echo "sa oled nooruk" #väljastab teate oled nooruk
+elif [ "$vanus" -ge 18 ] && [ "$vanus" -le 63 ]; then #kui aga vanus jääb sellese kategooriasse siis väljastab teate
+echo "sa oled täiskasvanu" #siis annab vastuseks selle kui jääb 18 ja 63 vahele
+elif [ "$vanus" -ge 63 ]; then #ja kui vastus on suurem kui 63, siis edastab ta echo käsu
+echo "sa oled senjoor" #väljasta lause sa oled senjoor
+fi
+#
+#lõpp 
