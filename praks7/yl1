@@ -12,6 +12,8 @@ elif [ "$vanus" -ge 18 ] && [ "$vanus" -le 63 ]; then #kui aga vanus jääb sell
 echo "sa oled täiskasvanu" #siis annab vastuseks selle kui jääb 18 ja 63 vahele
 elif [ "$vanus" -ge 63 ]; then #ja kui vastus on suurem kui 63, siis edastab ta echo käsu
 echo "sa oled senjoor" #väljasta lause sa oled senjoor
+else
+echo "vigane sisend"
 fi
 #
 #lõpp 
