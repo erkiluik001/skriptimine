@@ -1,0 +1,22 @@
+#!/bin/bash
+#
+#
+echo "Sisesta ridade arv:"; read rida #küsib kasutajalt ridade arvu
+echo "sisesta tarnide arv:"; read tarnid #küsib kasutajaöt tärnide arvu
+num=1 #alustab numbrilt 1
+for (( i = 1; i <= $rida; i++ ))
+do #alustab do käsku
+echo -n "$num. " #echo number ühest
+let num++ #jätkab ühest edasi
+for (( j = 1; j <= $tarnid; j++ ))
+do #alustab do käsku
+if (($i == 1 || $i == $rida)); then
+echo -n "* " #
+elif (($j == 1 || $j == $tarnid)); then
+echo -n "* " #echob tärni ja tühiku
+else
+echo -n "  " #echob kaks tühikut
+fi #lõppetab if käsku
+done #lõppetab do käsku
+echo "" #
+done #lõppetab do käsku
