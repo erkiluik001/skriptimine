@@ -1,0 +1,14 @@
+#!/bin/bash
+#
+#
+row=1 #panin et alustaks rida numer 1
+for (( i = 1; i <= 5; i++ ))
+do #alustab do käsku
+echo -n "$row." #echob rea algusesse numri
+let row++
+for (( j = 1 ; j <= 5; j++ ))
+do #alustab do käsku
+echo -n "* " #echob et ridades oleks *
+done #lõppetab done käsu
+echo "" #näitab tulemust
+done #lõppetab done käsu
