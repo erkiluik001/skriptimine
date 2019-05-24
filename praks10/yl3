@@ -1,0 +1,18 @@
+#!/bin/bash
+#
+echo -n "Sisestage hetke kella aeg täis arvuna: "
+read aeg
+if [ "$aeg" -ge 6 ] && [ "$aeg" -lt 12 ]; then
+echo "Tere Hommikust"
+elif [ "$aeg" -ge 12 ] && [ "$aeg" -lt 18 ]; then
+echo "Tere Päevast"
+elif [ "$aeg" -ge 18 ] && [ "$aeg" -lt 22 ]; then
+echo "Tere õhtust"
+elif [ "$aeg" -ge 22 ] && [ "$aeg" -lt 24 ]; then
+echo "Head ööd"
+elif [ "$aeg" -ge 0 ] && [ "$aeg" -lt 6 ]; then
+echo "head ööd"
+else
+echo "vale sisend"
+fi
+#lõpp
