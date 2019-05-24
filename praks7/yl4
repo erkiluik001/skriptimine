@@ -2,19 +2,19 @@
 #
 #head aega
 #
-echo -e "sisesta kella aeg"
-read aeg
+echo -e "sisesta kella aeg" #küsib kella aega
+read aeg #loeb aega
 nimi=$( whoami )
-if [ "$aeg" -ge 6 ] && [ "$aeg" -lt 12 ]
-then echo "Tere Hommikust, $nimi!"
-elif [ "$aeg" -ge 12 ] && [ "$aeg" -lt 18 ]
-then echo "Tere Päevast, $nimi!"
-elif [ "$aeg" -ge 18 ] && [ "$aeg" -lt 22 ]
-then echo "Tere õhtust, $nimi!"
-elif [ "$aeg" -ge 22 ] && [ "$aeg" -lt 25 ]
-then echo "Head ööd, $nimi!"
-elif [ "$aeg" -ge 0 ] && [ "$aeg" -lt 6 ]
-then echo "Head ööd, $nimi!"
-else echo "Vale sisend!"
+if [ "$aeg" -ge 6 ] && [ "$aeg" -lt 12 ] #kui kella aeg jääb sellesse vahemikkuse siis
+then echo "Tere Hommikust, $nimi!" #echob vastuse
+elif [ "$aeg" -ge 12 ] && [ "$aeg" -lt 18 ] #kui kella aeg jääb sellesse vahesse siis
+then echo "Tere Päevast, $nimi!" #echob vastuse
+elif [ "$aeg" -ge 18 ] && [ "$aeg" -lt 22 ] #kui kella aeg jääb sellesse vahesse siis
+then echo "Tere õhtust, $nimi!" #echob vastuse
+elif [ "$aeg" -ge 22 ] && [ "$aeg" -lt 25 ] #kui kella aeg jääb sellesse vahesse siis
+then echo "Head ööd, $nimi!" #echob vastuse
+elif [ "$aeg" -ge 0 ] && [ "$aeg" -lt 6 ] #kui kella aeg jääb sellesse vahesse siis
+then echo "Head ööd, $nimi!" #echob vastuse
+else echo "Vale sisend!" #echob vastuse
 fi #lõppetab if commandi
 #lõpp
