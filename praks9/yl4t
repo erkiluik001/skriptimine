@@ -1,0 +1,15 @@
+#!/bin/bash
+#
+echo -n "Sisesta ridade arv: "; read rida #küsib kasutajalt ridade arvu ja loeb seda
+num=1 #alusab numbrsit 1
+for (( i = 1; i <= $rida; i++ ))
+do #alustab do käsku
+echo -n "$num." #echob numbri.
+let num++ #jätkab järjekorra numbrit
+tarn=$(($rida +1 - $i))
+for (( j = 1; j <= $tarn; j++ ))
+do #do käsk
+echo -n "* " #echob tärn tühik
+done #lõppetab do käsu
+echo "" #kuvab ekraanile lahenduse
+done #lõppetab do käsu
