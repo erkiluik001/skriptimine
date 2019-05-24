@@ -2,18 +2,18 @@
 #
 #
 osch=0
-echo "1. Unix (Sun os)"
+echo "1. Unix (Sun os)" #annab kasutajale valida kas 1 või 2
 echo "2. Linux (Red hat)"
 
-echo -n "Select your os choice [1 or 2]? "
-read osch
-if [ $osch -eq 1 ] ; then
-echo "you pich unix (sun os)"
-else #### nested if i.e. if within if ######
-if [ $osch -eq 2 ] ; then
-echo "you pick up linux (red hat)"
-else
-echo "what you dont like unix/linux os."
-fi
-fi
+echo -n "Select your os choice [1 or 2]? " #kasutaja valib 1 või 2
+read osch #loeb vastust
+if [ $osch -eq 1 ] ; then #kui vastus on üks siis
+echo "you pich unix (sun os)" #echob selle vastuse
+else #kui on muu
+if [ $osch -eq 2 ] ; then #siis echob selle
+echo "you pick up linux (red hat)" #annab avastuseks selle
+else #või kui neist kumbi ei sobi
+echo "what you dont like unix/linux os?" #echob selle vastuse
+fi #lõppetab if käsu
+fi #lõppetab if käsu
 
