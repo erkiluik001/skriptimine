@@ -2,7 +2,7 @@
 #
 #Tervitamine vastavalt ajale
 #
-echo -e "Sisesta hetke kella aeg täis arvuna"
+echo -n "Sisesta hetke kella aeg täis arvuna"
 read aeg
 if [ "$aeg" -ge 6 ] && [ "$aeg" -lt 12 ]; then
 echo "Tere hommikust!"
