@@ -1,0 +1,18 @@
+#!/bin/bash
+#
+echo "Sisesta kuu numer: "
+read kuu
+if [ "$kuu" -ge 1 ] & [ "$kuu" -le 2 ]; then
+echo "Hetkel on Talv"
+elif [ "$kuu" -ge 3 ] & [ "$kuu" -le 5 ]; then
+echo "Hetkel on Kevad"
+elif [ "$kuu" -ge 6 ] & [ "$kuu" -le 8 ]; then
+echo "Hetkel on suvi"
+elif [ "$kuu" -ge 9 ] & [ "$kuu" -le 11 ]; then
+echo "Hetkel on sygis"
+elif [ "$kuu" -ge 12 ]; then
+echo "Hetkel on talv"
+else
+echo "Antud kuu numbrit pole olemas"
+fi
+#
