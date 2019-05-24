@@ -2,19 +2,19 @@
 #
 #Tervitamine vastavalt ajale
 #
-echo -n "Sisesta hetke kella aeg täis arvuna"
-read aeg
-if [ "$aeg" -ge 6 ] && [ "$aeg" -lt 12 ]; then
-echo "Tere hommikust!"
-elif [ "$aeg" -ge 12 ] && [ "$aeg" -lt 18 ]; then
-echo "Tere päevast!"
-elif [ "$aeg" -ge 18 ] && [ "$aeg" -lt 22 ]; then
-echo "Tere õhtust!"
-elif [ "$aeg" -ge 22 ] && [ "$aeg" -lt 24 ]; then
-echo "Head ööd!"
-elif [ "$aeg" -ge 0 ] && [ "$aeg" -lt 6 ]; then
-echo "Head ööd!"
-else
-echo "vale sisend"
-fi
+echo -n "Sisesta hetke kella aeg täis arvuna" #palub kasutajal sisestada kella aeg täisarvuna
+read aeg #loeb aega
+if [ "$aeg" -ge 6 ] && [ "$aeg" -lt 12 ]; then #kui aeg jääb nende aegade vahele siis
+echo "Tere hommikust!" #echob selle vastuse
+elif [ "$aeg" -ge 12 ] && [ "$aeg" -lt 18 ]; then #kui aeg jääb nende aegade vahele siis
+echo "Tere päevast!" #echob selle vastuse
+elif [ "$aeg" -ge 18 ] && [ "$aeg" -lt 22 ]; then #kui aeg jääb nende aegade vahele
+echo "Tere õhtust!" #echo selle vastuse
+elif [ "$aeg" -ge 22 ] && [ "$aeg" -lt 24 ]; then #kui aga aeg jääb nende aegade vahel siis
+echo "Head ööd!" #echob selle vastuse
+elif [ "$aeg" -ge 0 ] && [ "$aeg" -lt 6 ]; then #kui aeg jääb nende aegade vahele siis
+echo "Head ööd!" #echob selle vastuse
+else #muu siis
+echo "vale sisend" #edastab sõnumi vale sisend
+fi #lõppetab if käsu
 #lõpp
